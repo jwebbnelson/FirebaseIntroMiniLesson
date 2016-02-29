@@ -15,6 +15,14 @@
 		83F3C9111C84BC1A005D37A4 /* FirebaseIntroMiniLessonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C9101C84BC1A005D37A4 /* FirebaseIntroMiniLessonUITests.swift */; };
 		83F3C91F1C84BCBF005D37A4 /* RestaurantListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C91E1C84BCBF005D37A4 /* RestaurantListTableViewController.swift */; };
 		83F3C9211C84BFD3005D37A4 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C9201C84BFD3005D37A4 /* Restaurant.swift */; };
+		83F3C9371C84E4CE005D37A4 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F3C9361C84E4CE005D37A4 /* Firebase.framework */; };
+		83F3C9391C84E509005D37A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F3C9381C84E509005D37A4 /* SystemConfiguration.framework */; };
+		83F3C93B1C84E50F005D37A4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F3C93A1C84E50F005D37A4 /* Security.framework */; };
+		83F3C93D1C84E519005D37A4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F3C93C1C84E519005D37A4 /* CFNetwork.framework */; };
+		83F3C93F1C84E528005D37A4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F3C93E1C84E528005D37A4 /* libc++.tbd */; };
+		83F3C9411C84E533005D37A4 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F3C9401C84E533005D37A4 /* libicucore.tbd */; };
+		83F3C9441C84E5DC005D37A4 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C9431C84E5DC005D37A4 /* FirebaseController.swift */; };
+		83F3C9461C84E6C0005D37A4 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3C9451C84E6C0005D37A4 /* RestaurantController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		83F3C9121C84BC1A005D37A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83F3C91E1C84BCBF005D37A4 /* RestaurantListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantListTableViewController.swift; path = ../RestaurantListTableViewController.swift; sourceTree = "<group>"; };
 		83F3C9201C84BFD3005D37A4 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		83F3C9361C84E4CE005D37A4 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		83F3C9381C84E509005D37A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		83F3C93A1C84E50F005D37A4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		83F3C93C1C84E519005D37A4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		83F3C93E1C84E528005D37A4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		83F3C9401C84E533005D37A4 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		83F3C9431C84E5DC005D37A4 /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		83F3C9451C84E6C0005D37A4 /* RestaurantController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F3C9411C84E533005D37A4 /* libicucore.tbd in Frameworks */,
+				83F3C93F1C84E528005D37A4 /* libc++.tbd in Frameworks */,
+				83F3C93D1C84E519005D37A4 /* CFNetwork.framework in Frameworks */,
+				83F3C93B1C84E50F005D37A4 /* Security.framework in Frameworks */,
+				83F3C9391C84E509005D37A4 /* SystemConfiguration.framework in Frameworks */,
+				83F3C9371C84E4CE005D37A4 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +105,7 @@
 				83F3C9041C84BC1A005D37A4 /* FirebaseIntroMiniLessonTests */,
 				83F3C90F1C84BC1A005D37A4 /* FirebaseIntroMiniLessonUITests */,
 				83F3C8EE1C84BC1A005D37A4 /* Products */,
+				83F3C9421C84E56D005D37A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				83F3C91E1C84BCBF005D37A4 /* RestaurantListTableViewController.swift */,
+				83F3C9431C84E5DC005D37A4 /* FirebaseController.swift */,
+				83F3C9451C84E6C0005D37A4 /* RestaurantController.swift */,
 				83F3C9201C84BFD3005D37A4 /* Restaurant.swift */,
 				83F3C8F01C84BC1A005D37A4 /* AppDelegate.swift */,
 				83F3C8F41C84BC1A005D37A4 /* Main.storyboard */,
@@ -126,6 +151,19 @@
 				83F3C9121C84BC1A005D37A4 /* Info.plist */,
 			);
 			path = FirebaseIntroMiniLessonUITests;
+			sourceTree = "<group>";
+		};
+		83F3C9421C84E56D005D37A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83F3C9401C84E533005D37A4 /* libicucore.tbd */,
+				83F3C93E1C84E528005D37A4 /* libc++.tbd */,
+				83F3C93C1C84E519005D37A4 /* CFNetwork.framework */,
+				83F3C93A1C84E50F005D37A4 /* Security.framework */,
+				83F3C9381C84E509005D37A4 /* SystemConfiguration.framework */,
+				83F3C9361C84E4CE005D37A4 /* Firebase.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83F3C9441C84E5DC005D37A4 /* FirebaseController.swift in Sources */,
 				83F3C91F1C84BCBF005D37A4 /* RestaurantListTableViewController.swift in Sources */,
 				83F3C8F11C84BC1A005D37A4 /* AppDelegate.swift in Sources */,
 				83F3C9211C84BFD3005D37A4 /* Restaurant.swift in Sources */,
+				83F3C9461C84E6C0005D37A4 /* RestaurantController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +443,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FirebaseIntroMiniLesson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DevMtn.FirebaseIntroMiniLesson;
@@ -414,6 +458,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FirebaseIntroMiniLesson/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DevMtn.FirebaseIntroMiniLesson;
@@ -488,6 +536,7 @@
 				83F3C9171C84BC1A005D37A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F3C9181C84BC1A005D37A4 /* Build configuration list for PBXNativeTarget "FirebaseIntroMiniLessonTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +545,7 @@
 				83F3C91A1C84BC1A005D37A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83F3C91B1C84BC1A005D37A4 /* Build configuration list for PBXNativeTarget "FirebaseIntroMiniLessonUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +554,7 @@
 				83F3C91D1C84BC1A005D37A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

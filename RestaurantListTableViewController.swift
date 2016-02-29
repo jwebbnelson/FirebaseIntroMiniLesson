@@ -13,13 +13,19 @@ class RestaurantListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        listenForNotifications()
+    }
+    
+    func listenForNotifications() {
+        let nc = NSNotificationCenter.defaultCenter()
+        nc.addObserver(self, selector: "restaurantsUpdated:", name: RestaurantsUpdatedNotification, object: nil)
     }
 
+    func restaurantsUpdated(notification:NSNotification) {
+        dispatch_async(dispatch_get_main_queue()) { () -> Void in
+            self.tableView.reloadData()
+        }
+    }
    
     @IBAction func addButtonTapped(sender: AnyObject) {
         setUpRestaurantAlert()
@@ -36,6 +42,8 @@ class RestaurantListTableViewController: UITableViewController {
                 let address = textFields[1].text,
                 let category = textFields[2].text {
                    
+                    let restaurant = Restaurant(name: name, category: category, address: address)
+                    RestaurantController.sharedController.addRestaurant(restaurant)
             }
         }
         
@@ -63,15 +71,17 @@ class RestaurantListTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return 1
+        return RestaurantController.sharedController.restaurants.count
     }
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("restaurantCell", forIndexPath: indexPath)
 
-        cell.textLabel?.text = "Restaurant Name"
-        cell.detailTextLabel?.text = "Restaurant Address"
+        let restaurant = RestaurantController.sharedController.restaurants[indexPath.row]
+      
+        cell.textLabel?.text = restaurant.name
+        cell.detailTextLabel?.text = restaurant.address
 
         return cell
     }
